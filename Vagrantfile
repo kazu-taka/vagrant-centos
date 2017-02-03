@@ -78,8 +78,7 @@ Vagrant.configure(2) do |config|
     yum -y update >/dev/null 2>&1
 
     install "development tools"  gcc-c++ glibc-headers openssl-devel readline libyaml-devel readline-devel zlib zlib-devel
-    yum -y update kernel
-    yum -y install kernel-devel kernel-headers dkms gcc gcc-c++
+
     install "Git" git
     install "sqlite" sqlite sqlite-devel
 
